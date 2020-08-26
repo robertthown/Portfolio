@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@0;1&display=swap');
+@import "colors.scss";
+* {
+    font-family: 'Barlow Condensed', sans-serif;
+    // overflow: hidden;
+}
+
+body {
+    margin: 0;
+}
+
+.perfil {
+        color: $gainsboro;
+        border-radius: 0px 0px 20px 20px;
+        box-shadow: 0px 9px 19px 0px rgba(0,0,0,0.75);
+        background: $jet;
+        padding: 40px 10px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    img.img-perfil {
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 200px;
+        box-shadow: 10px 10px 71px 0px rgb(119, 106, 106);
+        transition: 0.5s transform;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+    h1{
+        color: $ming;
+        transition: 1s transform;
+        &:hover {
+            color: $indigo-dye;
+            transform: scale(1.3);
+        }
+    }
+    p.sobre{
+        text-transform: uppercase;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .perfil-icons {
+        display: flex;
+        width: 10vw;
+        justify-content: space-around;   
+        @media (min-width: 800px) {
+           width: 10vw;
+        }
+        i {
+            color: $ming;
+            padding: 10px;
+            transition: 0.5s transform;
+            &:hover {
+                color: $indigo-dye;
+                transform: scale(1.3);
+            }
+        }     
+    }
+}
+
+    .portfolio{
+        .portfolio-header{
+            background: $indigo-dye;
+            margin: 10px;
+            border-radius: 5px 5px 20px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-bottom: 20px;
+            box-shadow: inset 0px 3px 3px 0px rgba(0,0,0,0.2);
+            color: $gainsboro;
+            font-size: 30px;
+            h4{
+                font-size: 60px;
+                line-height: 20px;
+                margin-bottom: 40px;
+                margin-top: 40px;
+                color: $gainsboro;
+        }
+
+    }
+}
+
+    .trabalhos {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 10px 10px;
+            grid-template-areas: ". .";
+            padding: 0px 10px;
+        @media (min-width: 900px) {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: ". . .";
+        }
+        @media (min-width: 1300px) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: ". . . .";
+        }
+        .card {
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 5px 5px 0 0;
+                object-fit: cover;
+            }
+            font-size: 20px;
+            color: $jet;
+            background: $ming;
+            border-radius: 20px;
+        }
+    }   
+
+.body {
+    .title {
+        color: $indigo-dye;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 10px;
+        line-height: 0;
+    }
+    .descricao {
+        color: $indigo-dye;
+        text-align: justify;
+    }
+    .abrir {
+        background: $gainsboro;
+        border: none;
+        padding: 5px 20px;
+        margin: 5px 20px;
+        color: $jet;
+        font-weight: 700;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+}
